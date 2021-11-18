@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template - 26</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        .main {
+            height: 100%;
+            min-height: 100vh;
+        }
+
+        .top-head {
+            background-color: lightgray;
+            height: 40px;
+            color: darkslategrey;
+        }
+
+        .left-cnt {
+            margin-left: 100px;
+            float: left;
+            line-height: 40px;
+        }
+
+        .right-cnt {
+            float: right;
+            line-height: 40px;
+            margin-right: 100px;
+        }
+
+        .fa-envelope-open {
+            margin: 0px 5px 0px 10px;
+        }
+
+        .fa-phone {
+            margin: 0px 5px 0px 20px;
+        }
+
+        .fa-twitter {
+            margin: 0px 5px;
+        }
+
+        .fa-facebook {
+            margin: 0px 5px 0px 20px;
+        }
+
+        .header {
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .left-box {
+            float: left;
+        }
+
+        .left-box h1 {
+            padding: 0px 100px;
+            color: orange;
+        }
+
+        .right-box {
+            float: right;
+        }
+
+        .right-box ul {
+            display: flex;
+            margin-right: 100px;
+        }
+
+        .right-box ul li {
+            list-style: none;
+            margin: 0px 20px 0px 0px;
+            padding: 0;
+        }
+
+        .right-box ul li a {
+            text-decoration: none;
+            color: rgb(32, 56, 56);
+        }
+
+        .box {
+            background-image: url(./cargo.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 508px;
+            box-shadow: inset 0 0 0 1000px rgba(15, 236, 225, 0.8);
+        }
+
+        .inner-box {
+            width: 600px;
+            padding: 150px 0px 0px 100px;
+        }
+
+        .inner-box h1 {
+            color: white;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 45px;
+        }
+
+        .inner-box p {
+            color: white;
+            margin-bottom: 25px;
+        }
+
+        .form-box {
+            display: flex;
+        }
+
+        .form-box input {
+            padding: 20px;
+            flex-grow: 1;
+            margin-right: 10px;
+            border-radius: 8px;
+            border: none;
+        }
+
+        .form-box button {
+            width: 120px;
+            background-color: orange;
+            border: none;
+            border-radius: 8px;
+        }
+
+        .about {
+            position: relative;
+            display: inline-block;
+        }
+
+        .inner-list {
+            display: none;
+            position: absolute;
+            background-color: lightgray;
+            width: 70px;
+            padding: 10px;
+            z-index: 1;
+            border-radius: 8px;
+        }
+
+        .about:hover .inner-list {
+            display: block;
+        }
+
+        .inner-list ul {
+            display: block;
+        }
+
+        .inner-list ul li {
+            margin: 0;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="top-head">
+            <div class="left-cnt">
+                <span>
+                    <i class="fa fa-envelope-open"></i>
+                    info@yourdomain.com
+                </span>
+                <span>
+                    <i class="fa fa-phone"></i>
+                    1+ (234) 5678 9101
+                </span>
+            </div>
+            <div class="right-cnt">
+                <span>
+                    <i class="fa fa-twitter"></i>
+                    Twitter
+                </span>
+                <span>
+                    <i class="fa fa-facebook"></i>
+                    Facebook
+                </span>
+            </div>
+        </div>
+        <div class="header">
+            <div class="left-box">
+                <h1>CARGO</h1>
+            </div>
+            <div class="right-box">
+                <ul>
+                    <li>
+                        <a href="#!" style="color: orange;">Home</a>
+                    </li>
+                    <li>
+                        <a href="#!">Services</a>
+                    </li>
+                    <li>
+                        <div class="about">
+                            <a href="#!">About Us <i class="fa fa-chevron-down"></i></a>
+                            <div class="inner-list">
+                                <ul>
+                                    <li><a href="#">ABC</a></li>
+                                    <li><a href="#">DEF</a></li>
+                                    <li><a href="#">GHI</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#!">Why Us</a>
+                    </li>
+                    <li>
+                        <a href="#!">Testimonials</a>
+                    </li>
+                    <li>
+                        <a href="#!">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#!">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="box">
+            <div class="inner-box">
+                <h1>
+                    Choose Your Quality Delivery Of Your Cargo
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero eius ipsam illo facilis ea, earum
+                    laborum deserunt assumenda nihil nam.
+                </p>
+                <div class="form-box">
+                    <input type="text" placeholder="Enter your tracking number">
+                    <button>Track Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
